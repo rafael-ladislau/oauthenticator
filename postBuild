@@ -1,4 +1,0 @@
-#!/bin/bash
-echo "deb http://repo.yandex.ru/yandex-disk/deb/ stable main" >> /etc/apt/sources.list.d/yandex-disk.list
-apt-get update
-apt-get install yandex-disk
