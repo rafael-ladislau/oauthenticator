@@ -13,10 +13,6 @@ RUN echo "deb http://repo.yandex.ru/yandex-disk/deb/ stable main" >> /etc/apt/so
 RUN apt-get update
 RUN apt-get install -y yandex-disk
 
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
     
 COPY . ${HOME}
 USER root
